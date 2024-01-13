@@ -1,0 +1,96 @@
+
+.main-div{
+    height: calc(100vh - 121px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.select-div{
+    height: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.box{
+    height: 100%;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+}
+
+.box1{
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.select{
+    margin-top: 20px;
+    height: 68px;
+    width: 250px;
+}
+
+.options{
+    text-transform: uppercase;
+}
+
+.div2{
+    width: 100%;
+    height: calc(100vh - 191px);
+    overflow-y: scroll;
+    justify-content: center;
+    display: flex;
+}
+
+.table-div{
+    height: auto;
+    width: 60%;
+}
+
+.table-size{
+    height: auto;
+    width: 100%;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td{
+    height: 30px;
+    text-align: center;
+    border-bottom: 1px solid rgb(216, 216, 255);
+    padding: 5px;
+}
+
+td,th{
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+}
+
+th{
+    background-color: lavender;
+}
+
+.count{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.count-icon{
+    height: 25px;
+    width: 25px;
+}

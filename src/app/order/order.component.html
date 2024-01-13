@@ -1,0 +1,61 @@
+<div class="main-div">
+   <form [formGroup]="Selected"  class="select-div">
+      <div class="box">
+            <mat-form-field class="select">
+               <mat-label class="options">Category</mat-label>
+               <mat-select formControlName="category">
+                  <mat-option *ngFor="let cat of Category"
+                              [value]="cat" 
+                              class="options"
+                              (click)="ChangeCat()"
+                              >{{cat}}</mat-option>
+               </mat-select>
+            </mat-form-field>
+      </div>
+      <div class="box1">
+            <mat-form-field class="select">
+               <mat-label class="options">Items</mat-label>
+               <mat-select formControlName="item">
+                  <mat-option *ngFor="let item of items"
+                              [value]="item" 
+                              class="options"
+                              (click)="getData(item.id)"
+                              >{{item.name}}</mat-option>
+               </mat-select>
+            </mat-form-field>
+      </div>
+      </form>
+      <div class="div2">
+         <div class="table-div">
+               <table class="table-size">
+                     <tr>
+                        <th>S/No</th>
+                        <th>Product</th>
+                        <th>QTY</th>
+                     </tr>
+                     <tr *ngFor="let data of datas ; let i=index">
+                        <td>{{i + 1}}</td>
+                        <td style="text-transform: uppercase;">{{data.item.name}}</td>
+                        <td class="count">
+                           <img src="../../assets/icons/minus.png" class="count-icon" (click)="DecValue(data.item.id)">
+                           <span>{{data.item.qty}}</span>
+                           <img src="../../assets/icons/plus.png" class="count-icon" (click)="IncValue(data.item.id)"></td>
+                     </tr>
+                     <tr *ngIf="show==1">
+                        <td></td>
+                        <td>TOTAL</td>
+                        <td>{{qty}} Nos</td>
+                     </tr>
+                     <tr *ngIf="show==1">
+                        <td style="border-bottom: none;"></td>
+                        <td style="border-bottom: none;"></td>
+                        <td style="border-bottom: none;"><button routerLink="/cart" mat-raised-button color="primary">Place Order</button></td>
+                     </tr>
+               </table>
+         </div>
+         <div>
+         </div>
+      </div>
+</div>
+
+

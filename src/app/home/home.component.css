@@ -1,0 +1,25 @@
+
+.main-div{
+    height: calc(100% - 121px);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: scroll;
+}
+
+.sub-div{
+    height: 400px;
+    width: 80%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.image{
+    height: 400px;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

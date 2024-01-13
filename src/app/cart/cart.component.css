@@ -1,0 +1,9 @@
+.main{
+    height: calc(100vh - 121px);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+    font-weight: 600;
+}
